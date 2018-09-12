@@ -5,7 +5,7 @@
     <title>Home</title>
 </head>
 <body>
-<h1> Hello</h1>
+<h1>Hello <span th:if="${session.user != null}" th:text="${session.user.username}"></span></h1>
 <a href="/login">Login</a>
 </body>
 </html>
